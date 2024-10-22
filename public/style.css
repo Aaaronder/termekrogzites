@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --darkest-purple: #A594F9; 
+    --lightest-purple: #F5EFFF;
+    --contrast-purple: #E5D9F2;
+    --different-purple: #CDC1FF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--lightest-purple);
+    font-family: 'Outfit';
+}
+
+.container1{
+    width: 75vw;
+    margin: 20px auto;
+    background-color: var(--darkest-purple);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1000px;
+}
+
+h1{
+    margin: 0;
+    color: var(--contrast-purple);
+    text-align: center;
+    cursor: default;
+}
+
+h3{
+    margin: 0;
+    font-weight: 400;
+}
+
+form{
+    text-align: center;
+    background-color: var(--lightest-purple);
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px 0 20px 0;
+    border-radius: 7.5px;
+}
+
+.neve, .egysegar, .mennyisegiegyseg, .mennyiseg{
+    display: flex;
+}
+
+.egysegar, .mennyisegiegyseg, .mennyiseg{
+    margin-top: 20px;
+}
+
+.ninput, .einput, .meinput, .minput{
+    width: 40%;
+}
+
+.nlabel, .elabel, .melabel, .mlabel{
+    width: 60%;
+    text-align: end;
+    color: var(--darkest-purple);
+    font-size: 18px;
+}
+
+input, select{
+    width: 75%;
+    border-radius: 2px;
+    border: 1px solid var(--darkest-purple);
+}
+
+.rogzitesgomb{
+    margin-top: 20px;
+    background-color: white;
+    font-family: 'Outfit';
+    width: 25%;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--darkest-purple);
+    color: var(--darkest-purple);
+    cursor: pointer;
+}
+
+.gyatt1{
+    margin: auto;
+    width: 55%;
+}
+
+.kartya{
+    width: 100%;
+    background: var(--lightest-purple);
+    margin-top: 20px;
+    padding: 15px 0;
+}
+
+.knev, .kegysegar, .kmennyisegiegyseg, .kmennyiseg{
+    color: var(--darkest-purple);
+    font-size: 20px;
+    font-family: 'Outfit';
+    text-align: center;
+    padding: 5px 0;
+}
+
+hr{
+    height: 2px;
+    width: 80%;
+    border-width: 0;
+    color: var(--lightest-purple);
+    background-color: var(--lightest-purple);
+}

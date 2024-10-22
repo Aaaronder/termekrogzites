@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termék Rögzítés</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container1">
+        <h1>Termék Rögzítés</h1>
+        <form id="form" action="http://localhost:3000/" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="neve">
+                    <div class="nlabel">
+                        <label for="gynev">Adja meg a gyümölcs nevét: </label>
+                    </div>
+                    <div class="ninput">
+                        <input pattern=".{5,}" type="text" id="gynev" name="gynev" required>
+                    </div>
+                </div>
+                <div class="egysegar">
+                    <div class="elabel">
+                        <label for="gyegysegar">Adja meg a gyümölcs egységárát: </label>
+                    </div>
+                    <div class="einput">
+                        <input pattern="[0-9]" type="text" id="gyegysegar" name="gyegysegar" required>
+                    </div>
+                </div>
+                <div class="mennyisegiegyseg">
+                    <div class="melabel">
+                        <label for="gymennyisegiegyseg">Adja meg a gyümölcs mennyiségiegységét: </label>
+                    </div>
+                    <div class="meinput">
+                        <select name="gymennyisegiegyseg" id="gymennyisegiegyseg">
+                            <option name="kg" id="kg" value="kg">Kilogramm</option>
+                            <option name="db" id="db" value="db">Darab</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="mennyiseg">
+                    <div class="mlabel">
+                        <label for="gymennyiseg">Adja meg a gyümölcs mennyiségét: </label>
+                    </div>
+                    <div class="minput">
+                        <input pattern="[0-9]{1,}" type="text" id="gymennyiseg" name="gymennyiseg" required>
+                    </div>
+                </div>
+                <div class="rogzites">
+                    <input id="insert" class="rogzitesgomb" type="submit" value="Rögzítés">
+                </div>
+        </form>
+
+        <div id="kartyakk">
+            
+        </div>
+    </div>
+</body>
+</html>
